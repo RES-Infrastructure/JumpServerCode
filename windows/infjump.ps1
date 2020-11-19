@@ -41,7 +41,7 @@ Install-Chocolatey
 
 Install-FromChocolatey 'choco-upgrade-all-at-startup'
 Install-FromChocolatey 'git'
-Invoke-WebRequest -Uri 'https://gitlab.com/xxxx/system-init/-/raw/master/common/.gitconfig' -OutFile (Join-Path $env:USERPROFILE '.gitconfig')
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/RES-Infrastructure/JumpServerCode/main/common/.gitconfig' -OutFile (Join-Path $env:USERPROFILE '.gitconfig')
 
 Install-FromChocolatey 'vscode'
 Install-FromChocolatey 'microsoft-windows-terminal'
