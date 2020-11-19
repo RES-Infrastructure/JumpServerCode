@@ -53,7 +53,7 @@ Install-FromChocolatey 'vmware-powercli-psmodule'
 Install-FromChocolatey 'rvtools'
 Install-FromChocolatey 'sql-server-management-studio'
 Install-FromChocolatey 'notepadplusplus'
-choco install googlechrome
+Install-FromChocolatey 'googlechrome'
 
 Write-Host 'Installing Posh-Git' -ForegroundColor Green
 Install-Module 'Posh-Git' -Scope AllUsers -Force
