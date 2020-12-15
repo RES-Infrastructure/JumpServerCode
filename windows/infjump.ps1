@@ -64,6 +64,15 @@ Install-Module 'PSWindowsUpdate' -Scope AllUsers -Force
 Write-Host 'Installing Administrative tools for AD' -ForegroundColor Green
 Add-WindowsFeature rsat-ad-tools -Verbose
 
+Write-Host 'Installing Administrative tools for DHCP' -ForegroundColor Green
+Add-WindowsFeature RSAT-DHCP -Verbose
+
+Write-Host 'Installing Administrative tools for DNS' -ForegroundColor Green
+Add-WindowsFeature RSAT-DNS-Server -Verbose
+
+Write-Host 'Installing Administrative tools for Group Policy' -ForegroundColor Green
+Add-WindowsFeature GPMC -Verbose
+
 Write-Host 'Updating PowerShell help files' -ForegroundColor Green
 Update-Help -Force
 
